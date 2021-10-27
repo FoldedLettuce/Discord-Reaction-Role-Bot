@@ -4,38 +4,36 @@ This is a free open source easy to use code for a Discord reaction role bot!
 
 # Requirements
 
-This bot requires Node.Js and was developed and tested in Node.Js v14.15.4
+This bot requires Node.Js discord.js and was developed and tested in Node.Js v16.9.0
 
 You can get Node.Js from https://nodejs.org/en/download/
+You can get discord.js from doing "npm install discord.js", however it is already installed in this bot.
 
 
 # Setup:
 
 1. Clone the repository using git clone https://github.com/LiamMoroney/Discord-Reaction-Role-Bot.git (or download it as a .zip file and extract it)
 
-2. In the main.js file insert your discord bot token (Found here: https://discord.com/developers/applications/)
+2. In the main.js file insert your discord bot token at the bottom (Found here: https://discord.com/developers/applications/)
 
-3. Open the "reactionrole.js" file found in the commands folder.
+3. Open the config.json found in the folder you just downloaded, and change the channel ID (using developer mode https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- and right click on a channel and press "Copy ID") value to the one to plan on using for your reaction roles.
 
-4. First set the channel-id of where the reaction Embed will go on line 5
+4. Open the "reactionrole.js" file found in the commands folder.
 
-5. You can add a role by following the template found on line 6 making sure to edit where it says "templateRole" and "ROLE NAME"
+5. You can add a role by following the template found on line 7 making sure to edit where it says "(name)Emoji" and "(name)Role" and "(name)Rname" as well as making sure to make corresponding values in config.json
 
-6. Edit the emoji by following the template found on line 8 making sure to edit where it says "templateEmoji" and "EMOJI ID"
-^ You can find the discord emoji id by typing "\:emoji_name_here:" in the server you plan to add the bot to, this should return something like "<:test:797317734920093706>" and that is what you want to put in the "EMOJI ID" part
+6. Repeat step 5, just in main.js
 
-7. Edit the contents of the Embed, Follow the template on line 14 to add lines to the embed. 
-Also you can change the title on line 12 and a basic description on line 13
+7. Moving Back to reactionrole.js. Duplicate line 20, making sure to put it in between the existing line 20 and 21, and changing the values to match the ones in step 5.
 
-8. Next you will want to set the emojis the bot will react with by following the template on line 19
+8. Choose your emojis, prefably unicode, custom ones may not work currently, I personally use https://emojipedia.org/ to get unicode.
 
-9. Next we will add the roles, Follow the template on line 28-30 replacing "templateEmoji" and "templateRole" with what role to give when they react with a emoji.
+9. Next, move back to main.js and scroll down to line 50, then copy lines 51, 52 and 53, change ScreamEmoji to what you chose in step 5/6 and ScreamRole to what you chose in step 5/6
 
-10. Lastly we want to remove the roles when they remove a reaction, Follow the template on line 42-44 replacing "templateEmoji" and "templateRole" with what role to remove when they unreact with a emoji.
-
-
+10. Now repeat step 9, but for lines 67, 68, and 69.
 
 Made with ❤️ by Folded Lettuce
+		Fixed by (Another)Pillow
 
 # Please contact me through the sources below if you have any issues/require help!
 
@@ -46,3 +44,4 @@ Twitter: https://twitter.com/FoldedLettuce
 Email: liam@foldedlettuce.xyz
 
 Discord: Folded Lettuce#0001 // 455862963417382923
+		Pillow's discord: GeoIsCool#0019 // 718881941465596026
