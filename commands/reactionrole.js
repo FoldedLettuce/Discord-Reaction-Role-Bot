@@ -22,7 +22,7 @@ module.exports = {
 				
         console.log("Reactionrole Message Created")
         let msg = await message.channel.send(AAAAembed); 
-        msg.react('😱') //copy this
-        msg.react('😭')
+        msg.react(`${ScreamEmoji}`) //copy this
+        msg.react(`${CryEmoji}`)
     }
 }
