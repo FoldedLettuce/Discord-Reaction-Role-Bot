@@ -37,17 +37,9 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args, Discord, client);
-        //client.commands.get('rolegui').execute(message, args, Discord, client);
     }  else if (command == 'reactionrole') {
         client.commands.get('reactionrole').execute(message, args, Discord, client);
-    } else if (command == 'owner') {
-        if (message.author.id === '718881941465596026') {
-            message.channel.send(`hi owner`)
-        };
-        if (message.author.id != '718881941465596026') {
-            message.channel.send(`uRGHWHATDOYOUWANT`)
-        };
-    }
+    };
 });
 client.on('messageReactionAdd', async (reaction, user) => { //here
     if (reaction.message.partial) await reaction.message.fetch();
