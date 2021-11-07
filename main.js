@@ -13,6 +13,7 @@ const { ScreamRole } = require('./config.json')
 const { CryEmoji } = require('./config.json')
 const { CryRole } = require('./config.json')
 const { channel } = require('./config.json');
+const { bottoken } = require('./config.json');
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -36,8 +37,16 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args, Discord, client);
+        //client.commands.get('rolegui').execute(message, args, Discord, client);
     }  else if (command == 'reactionrole') {
         client.commands.get('reactionrole').execute(message, args, Discord, client);
+    } else if (command == 'owner') {
+        if (message.author.id === '718881941465596026') {
+            message.channel.send(`hi owner`)
+        };
+        if (message.author.id != '718881941465596026') {
+            message.channel.send(`uRGHWHATDOYOUWANT`)
+        };
     }
 });
 client.on('messageReactionAdd', async (reaction, user) => { //here
@@ -45,7 +54,6 @@ client.on('messageReactionAdd', async (reaction, user) => { //here
     if (reaction.partial) await reaction.fetch();
     if (user.bot) return;
     if (!reaction.message.guild) return;
-
     if (reaction.message.channel.id == channel) {
         if (reaction.emoji.name === ScreamEmoji) { //you copy
             await reaction.message.guild.members.cache.get(user.id).roles.add(ScreamRole); //these 3
@@ -75,4 +83,4 @@ client.on('messageReactionRemove', async (reaction, user) => {
 ); //to here
 
 
-client.login('token')
+client.login(`${bottoken}`);
