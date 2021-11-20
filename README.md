@@ -14,7 +14,7 @@ You can get discord.js from doing "npm install discord.js", however it is alread
 
 1. Clone the repository using git clone https://github.com/LiamMoroney/Discord-Reaction-Role-Bot.git (or download it as a .zip file and extract it)
 
-2. In the main.js file insert your discord bot token at the bottom (Found here: https://discord.com/developers/applications/)
+2. In the config.json file, insert your token into the "token" value. Tokens are found here: https://discord.com/developers/applications/
 
 3. Open the config.json found in the folder you just downloaded, and change the channel ID (using developer mode https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- and right click on a channel and press "Copy ID") value to the one to plan on using for your reaction roles.
 

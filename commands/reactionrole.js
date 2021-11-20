@@ -19,9 +19,10 @@ module.exports = {
             .setDescription('Once reacting you will gain your roles!\n\n'
                 + `${ScreamEmoji} for ${ScreamRname}\n` //copy this line
                 + `${CryEmoji} for ${CryRname}\n`)
-				
+
         console.log("Reactionrole Message Created")
-        let msg = await message.channel.send(AAAAembed); 
+        //let msg = await message.channel.send(AAAAembed); //        let msg = await message.channel.send({ content: 'CyI8pjSq4uHokVrnNe7773TeFv7k2Y', embeds: [AAAAembed] });
+        let msg = await message.channel.send({ embeds: [AAAAembed]});
         msg.react(`${ScreamEmoji}`) //copy this
         msg.react(`${CryEmoji}`)
     }
