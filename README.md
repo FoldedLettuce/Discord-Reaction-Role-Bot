@@ -34,7 +34,7 @@ You can get Discord.Js from doing "npm install discord.js-v12", however it is al
 
 Made with ❤️ by Folded Lettuce and Fixed by (Another)Pillow
 
-# Please contact me through the sources below if you have any issues/require help!
+# Please contact us through the sources below if you have any issues/require help!
 
 Site: http://www.foldedlettuce.xyz
 
