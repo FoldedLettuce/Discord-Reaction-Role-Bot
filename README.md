@@ -4,7 +4,7 @@ This is a free open source easy to use code for a Discord reaction role bot!
 
 # Requirements
 
-This bot requires Node.Js discord.js and was developed and tested in Node.Js v16.9.0
+This bot requires Node.Js and discord.js and was developed and tested in Node.Js v16.9.0
 
 You can get Node.Js from https://nodejs.org/en/download/
 You can get discord.js from doing "npm install discord.js", however it is already installed in this bot.
