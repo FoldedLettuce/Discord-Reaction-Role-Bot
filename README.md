@@ -4,19 +4,19 @@ This is a free open source easy to use code for a Discord reaction role bot!
 
 # Requirements
 
-This bot requires Node.Js and discord.js and was developed and tested in Node.Js v16.9.0
+This bot requires Node.Js and Discord.Js v12 and was developed and tested in Node.Js v16.9.0
 
 You can get Node.Js from https://nodejs.org/en/download/
-You can get discord.js from doing "npm install discord.js", however it is already installed in this bot.
+You can get Discord.Js from doing "npm install discord.js-v12", however it is already installed in this bot.
 
 
 # Setup:
 
-1. Clone the repository using git clone https://github.com/LiamMoroney/Discord-Reaction-Role-Bot.git (or download it as a .zip file and extract it)
+1. Clone the repository using `git clone https://github.com/FoldedLettuce/Discord-Reaction-Role-Bot.git` (or download it as a .zip file and extract it)
 
-2. In the config.json file, insert your token into the "token" value. Tokens are found here: https://discord.com/developers/applications/
+2. In the config.json file, insert your bot token into the "token" value. Tokens are found here: https://discord.com/developers/applications/
 
-3. Open the config.json found in the folder you just downloaded, and change the channel ID (using developer mode https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- and right click on a channel and press "Copy ID") value to the one to plan on using for your reaction roles.
+3. In the config.json file, change the channel ID to the channel you would like the reaction message posted (To get the channel ID turn on developer mode https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- and right click on a channel and press "Copy ID").
 
 4. Open the "reactionrole.js" file found in the commands folder.
 
@@ -32,8 +32,7 @@ You can get discord.js from doing "npm install discord.js", however it is alread
 
 10. Now repeat step 9, but for lines 67, 68, and 69.
 
-Made with ❤️ by Folded Lettuce
-		Fixed by (Another)Pillow
+Made with ❤️ by Folded Lettuce and Fixed by (Another)Pillow
 
 # Please contact me through the sources below if you have any issues/require help!
 
@@ -43,5 +42,6 @@ Twitter: https://twitter.com/FoldedLettuce
 
 Email: liam@foldedlettuce.xyz
 
-Discord: Folded Lettuce#0001 // 455862963417382923
-		Pillow's discord: GeoIsCool#0019 // 718881941465596026
+Discords:
+Folded Lettuce#0001 // 455862963417382923 <br/>
+GeoIsCool#0019 // 718881941465596026
