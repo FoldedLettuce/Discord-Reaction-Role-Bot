@@ -12,6 +12,9 @@ You can get Discord.Js from doing "npm install discord.js-v13" in a terminal.
 
 # Setup:
 
+Video Setup: https://youtu.be/1Q5rwuextww
+
+
 1. Clone the repository using `git clone https://github.com/FoldedLettuce/Discord-Reaction-Role-Bot.git` (or download it as a .zip file and extract it)
 
 2. In the config.json file, insert your bot token into the "token" value. Tokens are found here: https://discord.com/developers/applications/
