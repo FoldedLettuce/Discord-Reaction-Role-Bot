@@ -8,12 +8,12 @@ const fs = require('fs');
 
 client.commands = new Discord.Collection();
 
-const { ScreamEmoji } = require('./config.json');
-const { ScreamRole } = require('./config.json')
-const { CryEmoji } = require('./config.json')
-const { CryRole } = require('./config.json')
+const { MaleEmoji } = require('./config.json');
+const { MaleRole } = require('./config.json');
+const { FemaleEmoji } = require('./config.json');
+const { FemaleRole } = require('./config.json');
+const { botToken } = require('./config.json');
 const { channel } = require('./config.json');
-const { bottoken } = require('./config.json');
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -24,7 +24,7 @@ for(const file of commandFiles){
 
 
 client.once('ready', () => {
-    console.log(`rrb is online!`);
+    console.log(`Bot is online!`);
 });
 
 client.on('message', message =>{
@@ -47,11 +47,11 @@ client.on('messageReactionAdd', async (reaction, user) => { //here
     if (user.bot) return;
     if (!reaction.message.guild) return;
     if (reaction.message.channel.id == channel) {
-        if (reaction.emoji.name === ScreamEmoji) { //you copy
-            await reaction.message.guild.members.cache.get(user.id).roles.add(ScreamRole); //these 3
+        if (reaction.emoji.name === MaleEmoji) { //you copy
+            await reaction.message.guild.members.cache.get(user.id).roles.add(MaleRole); //these 3
         } //lines
-        if (reaction.emoji.name === CryEmoji) {
-            await reaction.message.guild.members.cache.get(user.id).roles.add(CryRole);
+        if (reaction.emoji.name === FemaleEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.add(FemaleRole);
         }
     }
 }
@@ -64,15 +64,15 @@ client.on('messageReactionRemove', async (reaction, user) => {
     if (!reaction.message.guild) return;
 
     if (reaction.message.channel.id == channel) {
-        if (reaction.emoji.name === ScreamEmoji) { //you copy
-            await reaction.message.guild.members.cache.get(user.id).roles.remove(ScreamRole); //these 3
+        if (reaction.emoji.name === MaleEmoji) { //you copy
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(MaleRole); //these 3
         } //lines
-        if (reaction.emoji.name === CryEmoji) {
-            await reaction.message.guild.members.cache.get(user.id).roles.remove(CryRole);
+        if (reaction.emoji.name === FemaleEmoji) {
+            await reaction.message.guild.members.cache.get(user.id).roles.remove(FemaleRole);
         }
     }
 }
 ); //to here
 
 
-client.login(`${bottoken}`);
+client.login(`${botToken}`);

@@ -1,10 +1,10 @@
 ﻿{
-  "channel": "901190047150264332",
-  "ScreamEmoji": "😱",
-  "CryEmoji": "😭",
-  "ScreamRname": "Scream",
-  "CryRname": "Cry",
-  "CryRole": "901539832793288745",
-  "ScreamRole": "901193722379767858",
-  "bottoken": "token"
+  "channel": "channelid",
+  "MaleEmoji": "👨",
+  "FemaleEmoji": "👩",
+  "MaleName": "Male",
+  "FemaleName": "Female",
+  "MaleRole": "roleid",
+  "FemaleRole": "roleid",
+  "botToken": "Token_Here"
 }

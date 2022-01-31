@@ -4,12 +4,10 @@ module.exports = {
     async execute(message, args, Discord, client) {
         const { channel } = require('../config.json');
 
-        const { ScreamEmoji } = require('../config.json');
-        const { ScreamRole } = require('../config.json')
-        const { ScreamRname } = require('../config.json')
-        const { CryEmoji } = require('../config.json')
-        const { CryRole } = require('../config.json')
-        const { CryRname } = require('../config.json')
+        const { MaleEmoji } = require('../config.json');
+        const { MaleName } = require('../config.json')
+        const { FemaleEmoji } = require('../config.json')
+        const { FemaleName } = require('../config.json')
         
 
         const { MessageEmbed } = require('discord.js')
@@ -17,13 +15,12 @@ module.exports = {
             .setColor('#17b111')
             .setTitle('React to the corresponding emojis to get personalized notifications!')
             .setDescription('Once reacting you will gain your roles!\n\n'
-                + `${ScreamEmoji} for ${ScreamRname}\n` //copy this line
-                + `${CryEmoji} for ${CryRname}\n`)
+                + `${MaleEmoji} for ${MaleName}\n` //copy this line
+                + `${FemaleEmoji} for ${FemaleName}\n`)
 
         console.log("Reactionrole Message Created")
-        //let msg = await message.channel.send(AAAAembed); //        let msg = await message.channel.send({ content: 'CyI8pjSq4uHokVrnNe7773TeFv7k2Y', embeds: [AAAAembed] });
         let msg = await message.channel.send({ embeds: [AAAAembed]});
-        msg.react(`${ScreamEmoji}`) //copy this
-        msg.react(`${CryEmoji}`)
+        msg.react(`${MaleEmoji}`) //copy this
+        msg.react(`${FemaleEmoji}`)
     }
 }
