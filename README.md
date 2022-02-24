@@ -39,12 +39,14 @@ Made with ❤️ by Folded Lettuce and Fixed by (Another)Pillow
 
 # Please contact us through the sources below if you have any issues/require help!
 
+Discord Server: https://discord.gg/AUPTEzZE6v
+
 Site: http://www.foldedlettuce.xyz
 
 Twitter: https://twitter.com/FoldedLettuce
 
 Email: liam@foldedlettuce.xyz
 
-Discords:
+Discords: 
 Folded Lettuce#0001 // 455862963417382923 <br/>
 GeoIsCool#0019 // 718881941465596026
