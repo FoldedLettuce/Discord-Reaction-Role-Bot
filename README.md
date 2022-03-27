@@ -48,5 +48,5 @@ Twitter: https://twitter.com/FoldedLettuce
 Email: liam@foldedlettuce.xyz
 
 Discords: 
-Folded Lettuce#0001 // 455862963417382923 <br/>
+lettuce#0001 // 455862963417382923 <br/>
 GeoIsCool#0019 // 718881941465596026
